@@ -1,11 +1,9 @@
 ﻿<html>
-<head >
-<link href="dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="dist/js/bootstrap.min.js" rel="stylesheet">
+
 <head>
-<center><h1>CFI Projects</h1><center>
-<img src="cfi.jpg" alt="Cfi logo" height="100" width="100">
-</head>
+<link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+
 <style>
 .img
 {
@@ -16,6 +14,7 @@ display:none;
 display:none;}
 </style>
 <script src="dist/js/jquery-1.11.0.min.js"></script>
+<script src="dist/js/bootstrap.min.js" rel="stylesheet"></script>
 <script>
 $(document).ready(function() {
 	$("#proj_1").click(function() 
@@ -49,7 +48,11 @@ $(document).ready(function() {
 
 </script>
 </head>
-<body data-spy="scroll" data-target="#buttons">
+<body >
+<header>
+<center><h1>CFI Projects</h1><center>
+<img src="cfi.jpg" alt="Cfi logo" height="100" width="100">
+</header>
 <div class="container" id="container" >
 	<div class="row" style="text-align:center"><div class="col-md-12"><h1>Projects At CFI</h1></div></div>
 	<div class="row" >
@@ -59,7 +62,7 @@ $(document).ready(function() {
 			<li id="proj_2"><a href="#accordion" >project 2</a></li>
 			<li id="proj_3"><a href="#accordion">project 3</a></li>
 			</ul>
-	<!--	<ul class="nav nav-pills nav-stacked" >
+	<!--	<ul class="nav nav-pills " >
 		<li class="active" id="intro" >Introduction</li>	
 		<li  id="format" >Event Format</li>
 		<li id="query">Queries</li>
