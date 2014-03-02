@@ -1,0 +1,138 @@
+﻿<html>
+<head >
+<link href="dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="dist/js/bootstrap.min.js" rel="stylesheet">
+<head>
+<center><h1>CFI Projects</h1><center>
+<img src="cfi.jpg" alt="Cfi logo" height="100" width="100">
+</head>
+<style>
+.img
+{
+display:none;
+}
+.data_intro
+{
+display:none;}
+</style>
+<script src="dist/js/jquery-1.11.0.min.js"></script>
+<script>
+$(document).ready(function() {
+	$("#proj_1").click(function() 
+			{
+			$(".proj2").hide("slow");
+			$(".proj3").hide("slow");
+			$(".proj1").show("slow");
+			
+			});
+	$("#proj_2").click(function() 
+			{
+			$(".proj1").hide("slow");
+			$(".proj3").hide("slow");
+			$(".proj2").show("slow");
+			});
+	$("#proj_3").click(function() 
+			{
+			$(".proj2").hide("slow");
+			$(".proj1").hide("slow");
+			$(".proj3").show("slow");
+			
+			});			
+	$(".panel-title").click(function()
+	{
+	$(".collapse").collapse();
+	}
+	);
+			});
+	
+	 
+
+</script>
+</head>
+<body data-spy="scroll" data-target="#buttons">
+<div class="container" id="container" >
+	<div class="row" style="text-align:center"><div class="col-md-12"><h1>Projects At CFI</h1></div></div>
+	<div class="row" >
+		<div class="col-md-3" id="buttons">
+			<ul class="nav nav-pills nav-stacked tabs">	
+			<li  id="proj_1"><a href="#accordion">project 1</a></li>
+			<li id="proj_2"><a href="#accordion" >project 2</a></li>
+			<li id="proj_3"><a href="#accordion">project 3</a></li>
+			</ul>
+	<!--	<ul class="nav nav-pills nav-stacked" >
+		<li class="active" id="intro" >Introduction</li>	
+		<li  id="format" >Event Format</li>
+		<li id="query">Queries</li>
+		<li id="contact">Contact us</li>
+		<li id="chennai">Chennai SJQ</li>
+		</ul>
+-->	
+	</div>
+		<div class="col-md-9" id="buttons">
+				<div class="panel-group" id="accordion">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" data-target="#collapseOne" href="#collapseOne">
+							INTRODUCTON
+							</a>
+							</h4>
+						</div>
+						<div id="collapseOne" class="panel-collapse collapse in">
+							<div class="panel-body ">
+								<div class="proj1 data_intro" >
+								intro 1
+								</div>
+								<div class="proj2 data_intro" >
+								intro 2
+								</div>
+								<div class="proj3 data_intro" >
+								intro 3
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" data-target="#collapseTwo" href="#collapseTwo">
+								IMAGE
+							</a>
+							</h4>
+						</div>
+						<div id="collapseTwo" class="panel-collapse collapse">
+							<div class="panel-body ">
+								<div class="proj1 img" >
+									<img src="project1.jpg" alt="project 1" height="100" width="100">
+								</div>
+								<div class="proj2 img" >
+									<img src="project2.jpg" alt="project 2" height="100" width="100">
+								</div>
+								<div class="proj3 img" >
+									<img src="project3.jpg" alt="project 3" height="100" width="100">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" data-target="#collapseThree" href="#collapseThree">
+							BUTTON
+							</a>
+							</h4>
+						</div>
+						<div id="collapseThree" class="panel-collapse collapse">
+							<div class="panel-body ">
+								<ul class="nav nav-tabs proj1 proj2 proj3">
+									<li class="active"><a href="#">XYZ</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</body>
+</html>

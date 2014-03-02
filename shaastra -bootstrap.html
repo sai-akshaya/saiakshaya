@@ -3,53 +3,42 @@
 <title>Shaastra</title>
 <link href="dist/css/bootstrap.min.css" rel="stylesheet">
 <style>
-#content
+.data
 {
-
+display:none;
 }
 </style>
-<script src=dist\js\jquery-1.11.0.min.js></script>
+<script src=dist/js/jquery-1.11.0.min.js></script>
 <script>
 $(document).ready(function() {
 	$("#intro").click(function() 
 			{
+			$(".data").hide("slow");
 			$("#intro_data").show("slow");
-			$("#format_data").hide("slow");
-			$("#query_data").hide("slow");
-			$("#contact_data").hide("slow");
-			$("#chennai_data").hide("slow");
 			});
 	$("#format").click(function() 
 			{
+			$(".data").hide("slow");
 			$("#format_data").show("slow");
-			$("#intro_data").hide("slow");
-			$("#query_data").hide("slow");
-			$("#contact_data").hide("slow");
-			$("#chennai_data").hide("slow");
+			
 			});
 	$("#query").click(function() 
 			{
+			$(".data").hide("slow");
 			$("#query_data").show("slow");
-			$("#format_data").hide("slow");
-			$("#intro_data").hide("slow");
-			$("#contact_data").hide("slow");
-			$("#chennai_data").hide("slow");
+			
 			});			
 	$("#contact").click(function() 
 			{
+			$(".data").hide("slow");
 			$("#contact_data").show("slow");
-			$("#format_data").hide("slow");
-			$("#query_data").hide("slow");
-			$("#intro_data").hide("slow");
-			$("#chennai_data").hide("slow");
+			
 			});			
 	$("#chennai").click(function() 
 			{
+			$(".data").hide("slow");
 			$("#chennai_data").show("slow");
-			$("#format_data").hide("slow");
-			$("#query_data").hide("slow");
-			$("#contact_data").hide("slow");
-			$("#intro_data").hide("slow");
+			
 	});});
 	 /*$(function () { $('.tabs').tabs() });*/ 
 
@@ -61,7 +50,7 @@ $(document).ready(function() {
 	<div class="row" >
 		<div class="col-md-3">
 			<ul class="nav nav-pills nav-stacked tabs">	
-			<li class="active" id="intro"><a href="#intro_data" >Introduction</a></li>
+			<li  id="intro"><a href="#intro_data">Introduction</a></li>
 			<li id="format"><a href="#events_data" >Events</a></li>
 			<li id="query"><a href="#query_data">Query</a></li>
 			<li id="contact"><a href="#contact_data">Contact Us</a></li>
